@@ -1,0 +1,39 @@
+﻿@API_HostAddress = http://localhost:5182
+
+
+### PETS - GET
+GET {{API_HostAddress}}/api/pets
+Accept: application/json
+
+### PETS - POST
+POST {{API_HostAddress}}/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Oreo",
+  "type": "Cat",
+  "ownerName": "Nusaybah"
+}
+
+### PETS - DELETE 
+DELETE {{API_HostAddress}}/api/pets/1
+
+
+### APPOINTMENTS - GET
+GET {{API_HostAddress}}/api/appointments
+Accept: application/json
+
+### APPOINTMENTS - POST
+POST {{API_HostAddress}}/api/appointments
+Content-Type: application/json
+Accept: application/json
+
+{
+  "petId": 1,
+  "date": "2026-01-10 18:00",
+  "reason": "Vaccination"
+}
+
+### APPOINTMENTS - DELETE
+DELETE {{API_HostAddress}}/api/appointments/1
